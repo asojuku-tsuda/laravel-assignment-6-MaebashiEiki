@@ -6,7 +6,7 @@
     // メインページのルート - 全件取得、一件取得、ID指定取得を表示
     Route::get('/', function () {
         // TODO: 全件取得
-        $allClothes = [];
+        $allClothes = Clothes::all();
 
         // 最初の1件取得
         $firstClothes = [];
